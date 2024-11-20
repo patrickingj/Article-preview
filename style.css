@@ -1,0 +1,111 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --ff: 'Manrope', sans-serif;
+  --fw-base: 500;
+  --fw-bold: 700;
+  
+  --color-veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --color-desaturatedDarkBlue: hsl(214, 17%, 87%);
+  --color-grayishBlue: hsl(212, 23%, 49%);
+  --color-lightGrayishBlue: hsl(210, 46%, 97%);
+}
+
+body {
+  background-color: var(--color-desaturatedDarkBlue);
+  margin: 1rem;
+  font-family: var(--ff);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-weight: var(--fw-base);
+}
+
+main {
+  background-color: var(--color-lightGrayishBlue);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  max-width: 41rem;
+  position: relative;
+}
+
+#main-content {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.heading, .authorName {
+  color: var(--color-veryDarkGrayishBlue);
+  font-size: 1.05rem;
+  font-weight: var(--fw-bold);
+}
+
+.mainParagraph, .date {
+  color: var(--color-grayishBlue);
+}
+
+.authorImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.shareIcon {
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background-color: var(--color-desaturatedDarkBlue);
+}
+
+.sharePopup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-veryDarkGrayishBlue);
+  width: 100%;
+  height: 5.5rem;
+}
+
+.sharePopup img {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-veryDarkGrayishBlue);
+}
+
+#aboutAuthor {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#authorProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
